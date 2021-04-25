@@ -1,0 +1,19 @@
+header, footer {
+    background-color: slategrey;
+}
+footer {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    font-size: 2em;
+}
+img {
+    grid-template-columns: 1fr, 150px;
+    grid-row: 200px, 1fr;
+    justify-items: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}

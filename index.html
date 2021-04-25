@@ -5,13 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Test - Smbaikaye Huriavi</title>
+    <link href="css/index.css" rel="stylesheet">
     <meta name="description" content="This is a test.">
 </head>
 
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Smbaikaye Huriavi</h1>
+        
     </header>
+    <main>
+        <img src="Simi Picture.jpg" alt="Simi Senior pic" width="100px" height="150px">
+        <h2>Assignment Links</h2>
+            <ul>
+                <li>Lesson 02: <a href="#"></a> Assignment 02</li>
+                <li>Lesson 03: <a href="#"></a> Assignment 03</li>
+                <li>Lesson 04: <a href="#"></a> Assignment 04</li>
+            </ul>
+    </main>
+    <footer>
+        &copy;2021 | Smbaikaye Huriavi | Washington | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a> <br>
+        Last Updated: <input type="text" id="currentDateTime">
+        <br><br>
+        <script>
+          var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+' '+time;
+          document.getElementById("currentDateTime").value = dateTime;
+        </script>
+    </footer>
 </body>
 
 </html>
