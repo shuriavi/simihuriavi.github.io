@@ -10,31 +10,28 @@
     <meta name="description" content="This is a test.">
 </head>
 
-<body>
+<body>        
+    <img src="Simi Picture.jpg" alt="Simi Senior pic" height="250px">
     <header>
         <h1>Smbaikaye Huriavi</h1>
         
     </header>
     <main>
-        <img src="Simi Picture.jpg" alt="Simi Senior pic" width="100px" height="150px">
+
         <h2>Assignment Links</h2>
             <ul>
-                <li>Lesson 02: <a href="#"></a> Assignment 02</li>
-                <li>Lesson 03: <a href="#"></a> Assignment 03</li>
-                <li>Lesson 04: <a href="#"></a> Assignment 04</li>
+                <li>Lesson 01: <a href="lesson2/design-principles.html">Course Assignments Portal</a> </li>
+                <li>Lesson 01: <a href="#">Design Principles Document</a> </li>
+                <li>Lesson 02: <a href="#">Assignment 04</a> </li>
             </ul>
     </main>
     <footer>
         &copy;2021 | Smbaikaye Huriavi | Washington | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online Learning</a> <br>
-        Last Updated: <input type="text" id="currentDateTime">
-        <br><br>
+        Last Updated: <p type="text" id="currentDate">
         <script>
-          var today = new Date();
-        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        var dateTime = date+' '+time;
-          document.getElementById("currentDateTime").value = dateTime;
-        </script>
+            var d = new Date();
+            document.getElementById("currentDate").innerHTML = d;
+            </script>
     </footer>
 </body>
 
