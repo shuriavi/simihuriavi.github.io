@@ -4,12 +4,78 @@ a {
     font-weight: bold;
   }
   
+  #announce {
+    display: none;
+    background-color: #CEEAF7;
+    color: #05386B;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  .articlediv p {
+    color: #396E94;
+  }
+  
+  .articlediv {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #000;
+    color: #396E94;
+  }
+  
+  #article_img {
+    width: 100%;
+  }
+
   body {
     margin: 0 auto;
     font-family: "Alata";
     background-color: #EDF5E1;
   }
+
+  .contact_info {
+    grid-column: 1;
+    margin: auto;
+  }
   
+  .contact_info h3, .contact_info h4 {
+    text-align: center;
+    color: #396E94;
+  }  
+  
+  .contactdiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  #degrees1, #degrees2, #degrees3, #degrees4, #degrees5 {
+    color: #396E94;
+  }
+  
+  #fiveDay {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    color: #396E94;
+  }
+  
+  .forecastdiv {
+    display: none;
+  }
+  
+  #forecastDay {
+    background-color: #8ee4af;
+    color: #396E94;
+    font-family: Century-Gothic;
+  }
+
   header {
     color: #040127;
     align-items:center;
@@ -52,6 +118,10 @@ a {
     font-family: "Alata";
     font-size: 1.2em;
   }
+
+  .forecastdiv h3, .articlediv h3 {
+    text-align: center;
+  }
   
   h4 {
     text-decoration: underline;
@@ -63,6 +133,30 @@ a {
     color: #040127;
   }
   
+  .herodiv {
+    margin: 10px auto;
+    position: relative;}
+    
+  .herodiv img {
+    width: 100%;
+  }
+  
+  .summary {
+    position: absolute;
+    top: 0px;
+    font-size: .75em;
+    background: radial-gradient(#eee, #EDF5E1);
+    border: 1px solid #000;
+    padding: 5px;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+  }
+  
+  .summary p {
+    color: #05386B;
+    font-weight: bolder;
+  }
+
   .contents{
     display: block;
     margin: 10px auto;
@@ -83,67 +177,72 @@ a {
     letter-spacing: 1pt;
     color: #396E94;
   }
-  
+
+  #map {
+    margin: auto;
+    border: 2px solid #05386b;
+  }
+
+
   nav {
-	margin: 0 auto;
-	max-width: auto;
-	background-color: #040127;
-    font-size: 0.93em;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #040127;
+    color: #396E94;
+  }
+  .nav_bar {
+    list-style: none;
+    padding: 0;
+  }
+  .nav_bar li:first-child {
+    display: block;
+  }
+  .nav_bar li {
+    display: none;
+  }
+  .nav_bar a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+  }
+  .nav_bar a:hover {
+    color: #E7C24F;
+    background-color: #fff;
+    font-weight: 700;
+  }
+  
+  /* the onclick JS toggles the .repsonsive class from display none (.nav_bar li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+    <ul class="nav_bar responsive">
+    */
+  .responsive li {
+    display: block;
+  }
+  
+  /* Media Query for medium + screens */
+  @media only screen and (min-width: 32.5em) {
+    .nav_bar {
+      display: flex;
+    }
+    .nav_bar li {
+      display: block; /* needed because of state in small view */
+      flex: 1 1 100%;
+    }
+    .nav_bar li a {
+      color: #396E94;
+      text-align: center;
+    }
     
-}
-.navigation a {
-	display: block;
-	color: #fff;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-}
-.navigation a:hover {
-	color: #E7C24F;
-	background-color: #fff;
-	font-weight: 700;
-}
+    .nav_bar li:first-child {
+      display: none;
+    }
+  }
 
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
-  <ul class="navigation responsive">
-  */
-.responsive li {
-	display: block;
-}
-
-/* Media Query for medium + screens */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* needed because of state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation li a {
-		color: #CEEAF7;
-		text-align: center;
-	}
-	
-	.navigation li:first-child {
-		display: none;
-	}
-}
   
   p {
     font-family: "open sans", sans-serif;
     font-size: 1em;
-    font-weight: bold;
     color:	#5CDB95;
   }
   
@@ -159,12 +258,11 @@ a {
   }
   
   #copyright {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Alata', sans-serif;
   }
   
-  #lastUpdate {
+  #dates {
     font-size: 1.0em;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Alata', sans-serif;
     padding-top: 5px;
-    color: #CEEAF7;
   }
