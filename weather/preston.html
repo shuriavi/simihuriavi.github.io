@@ -42,13 +42,15 @@
         <h2 class="section_head">Preston</h2>
         <div class="herodiv">
             <picture>
-                <img src="pretty prarie.jpg" alt="pretty prairie">
-            </picture>
+                <source media="(max-width: 800px)" srcset="Optimized-pretty prarie800.jpg">
+                <source media="(max-width: 1200px)" srcset="Optimized-pretty prarie 1200.jpg">
+                <img src="Optimized-pretty prarie400.jpg" alt="Pretty Prarie">
+              </picture>
             <section class="summary">
    			    <h3>Weather Summary</h3>
    				  <p>Currently: Partly Cloudy</p>
    				  <p>High: 89 °F</p>
-   				  <p>Wind Chill: 3 °F</p>
+   				  <p>Wind Chill: 84 °F</p>
             <p>Humidity: 16%</p>
             <p>Wind Speed: 5 mph</p>
   				</section>
@@ -68,27 +70,27 @@
           <tbody>
               <tr>
                   <td>
-                      <img src="/weather/images/partly cloudy.jpg" alt="Image of Day 1 Forecast">
+                      <img src="partlycloudy.jpg" alt="Image of Day 1 Forecast">
                       <br>
                       <span id="degrees1">89 °F</span>
                   </td>
                   <td>
-                      <img src="/weather/images/rainy.png" alt="Image of Day 2 Forecast">
+                      <img src="rainy.png" alt="Image of Day 2 Forecast">
                       <br>
                       <span id="degrees2">73 °F</span>
                   </td>
                   <td>
-                      <img src="/weather/images/partly cloudy.jpg" alt="Image of Day 3 Forecast">
+                      <img src="partlycloudy.jpg" alt="Image of Day 3 Forecast">
                       <br>
                       <span id="degrees3">79 °F</span>
                   </td>
                   <td>
-                      <img src="/weather/images/partly cloudy.jpg" alt="Image of Day 4 Forecast">
+                      <img src="partlycloudy.jpg" alt="Image of Day 4 Forecast">
                       <br>
                       <span id="degrees4">85 °F</span>
                   </td>
                   <td>
-                      <img src="/weather/images/sunny.jpg" alt="Image of Day 5 Forecast">
+                      <img src="sunny.jpg" alt="Image of Day 5 Forecast">
                       <br>
                       <span id="degrees5">89 °F</span>
                   </td>
@@ -97,7 +99,11 @@
       </table>
 			</div>
       <div class="articlediv">
-        <img id="article_img" src="thunderstrom.jpg" alt="Storm Image">
+        <picture>
+            <source media="(max-width: 800px)" srcset="Optimized-thunderstrom 800.jpg">
+            <source media="(max-width: 1200px)" srcset="Optimized-thunderstrom 1200.jpg">
+            <img id="article_img" src="Optimized-thunderstrom400.jpg" alt="Storm Image">
+          </picture>
         <h3>Articles</h3>
         <p>A stray shower or thunderstorm is possible early. Partly cloudy skies early will give way to cloudy skies late. Low 57F. Winds light and variable.</p>
           
