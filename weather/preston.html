@@ -25,19 +25,19 @@
             <h1>Weather For You</h1>
             <p class="motto">The weather that you can trust.</p>
         </section>
-
+        
     </header>
     <nav>
         <ul class="nav_bar">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a class="active" href="/weather/preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a class="active" href="/weather/preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
-    </nav>
+      </nav>
     <main>
         <h2 class="section_head">Preston</h2>
         <div class="herodiv">
@@ -45,93 +45,84 @@
                 <source media="(max-width: 800px)" srcset="Optimized-pretty prarie800.jpg">
                 <source media="(max-width: 1200px)" srcset="Optimized-pretty prarie 1200.jpg">
                 <img src="Optimized-pretty prarie400.jpg" alt="Pretty Prarie">
-            </picture>
+              </picture>
             <section class="summary">
-                <h3>Weather Summary</h3>
-                <p>Currently: Partly Cloudy</p>
-                <span id="temp">89</span>
-                °F
-                </p>
-                <p>Wind Chill:
-                    <span id="windchill"></span>
-                    °F
-                    <p>Humidity: 16%</p>
-                    <p>Wind Speed: 5 mph</p>
-            </section>
-        </div>
-        <div class="forecastdiv">
-            <h3>5 Day Forecast</h3>
-            <table id="fiveDay">
-                <thead>
-                    <tr id="forecastDay">
-                        <th>Wed</th>
-                        <th>Thur</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="partlycloudy.jpg" alt="Image of Day 1 Forecast">
-                            <br>
-                            <span id="degrees1">89 °F</span>
-                        </td>
-                        <td>
-                            <img src="rainy.png" alt="Image of Day 2 Forecast">
-                            <br>
-                            <span id="degrees2">73 °F</span>
-                        </td>
-                        <td>
-                            <img src="partlycloudy.jpg" alt="Image of Day 3 Forecast">
-                            <br>
-                            <span id="degrees3">79 °F</span>
-                        </td>
-                        <td>
-                            <img src="partlycloudy.jpg" alt="Image of Day 4 Forecast">
-                            <br>
-                            <span id="degrees4">85 °F</span>
-                        </td>
-                        <td>
-                            <img src="sunny.jpg" alt="Image of Day 5 Forecast">
-                            <br>
-                            <span id="degrees5">89 °F</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="articlediv">
-            <picture>
-                <source media="(max-width: 800px)" srcset="Optimized-thunderstrom 800.jpg">
-                <source media="(max-width: 1200px)" srcset="Optimized-thunderstrom 1200.jpg">
-                <img id="article_img" src="Optimized-thunderstrom400.jpg" alt="Storm Image">
-            </picture>
-            <h3>Articles</h3>
-            <p>A stray shower or thunderstorm is possible early. Partly cloudy skies early will give way to cloudy skies
-                late. Low 57F. Winds light and variable.</p>
+   			    <h3>Weather Summary</h3>
+   				  <p>Currently: Partly Cloudy</p>
+   				  <p>High: 89 °F</p>
+   				  <p>Wind Chill: 84 °F</p>
+            <p>Humidity: 16%</p>
+            <p>Wind Speed: 5 mph</p>
+  				</section>
+			</div>
+      <div class="forecastdiv">
+				<h3>5 Day Forecast</h3>
+				<table id="fiveDay">
+          <thead>
+              <tr id="forecastDay">
+                  <th>Wed</th>
+                  <th>Thur</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <img src="partlycloudy.jpg" alt="Image of Day 1 Forecast">
+                      <br>
+                      <span id="degrees1">89 °F</span>
+                  </td>
+                  <td>
+                      <img src="rainy.png" alt="Image of Day 2 Forecast">
+                      <br>
+                      <span id="degrees2">73 °F</span>
+                  </td>
+                  <td>
+                      <img src="partlycloudy.jpg" alt="Image of Day 3 Forecast">
+                      <br>
+                      <span id="degrees3">79 °F</span>
+                  </td>
+                  <td>
+                      <img src="partlycloudy.jpg" alt="Image of Day 4 Forecast">
+                      <br>
+                      <span id="degrees4">85 °F</span>
+                  </td>
+                  <td>
+                      <img src="sunny.jpg" alt="Image of Day 5 Forecast">
+                      <br>
+                      <span id="degrees5">89 °F</span>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+			</div>
+      <div class="articlediv">
+        <picture>
+            <source media="(max-width: 800px)" srcset="Optimized-thunderstrom 800.jpg">
+            <source media="(max-width: 1200px)" srcset="Optimized-thunderstrom 1200.jpg">
+            <img id="article_img" src="Optimized-thunderstrom400.jpg" alt="Storm Image">
+          </picture>
+        <h3>Articles</h3>
+        <p>A stray shower or thunderstorm is possible early. Partly cloudy skies early will give way to cloudy skies late. Low 57F. Winds light and variable.</p>
+          
+        <p>A potentially historic multi-day heat wave will take hold in the Northwest this weekend and last into early next week with dangerous triple-digit highs threatening all-time records in parts of Washington, Oregon and Idaho.
 
-            <p>A potentially historic multi-day heat wave will take hold in the Northwest this weekend and last into
-                early next week with dangerous triple-digit highs threatening all-time records in parts of Washington,
-                Oregon and Idaho.
-
-                The West has already been one of the epicenters for the most intense heat of June so far.--<a
-                    href="https://weather.com/forecast/regional/news/2021-06-22-northwest-dangerous-record-heat-late-june">The
-                    Weather Channel</a></p>
+            The West has already been one of the epicenters for the most intense heat of June so far.--<a href="https://weather.com/forecast/regional/news/2021-06-22-northwest-dangerous-record-heat-late-june">The Weather Channel</a></p>
+      </div>
+      <div class="contactdiv">
+        <div class="contact_info">
+          <h4>Contact Information</h4>
+          <h3>1234 Storm Avenue</h3>
+          <h3>Boise, Idaho 83707</h3>
+          <h3>1-800-968-8243</h3>
+          <h3>contact@weatherforyou.com</h3>
         </div>
-        <div class="contactdiv">
-            <div class="contact_info">
-                <h4>Contact Information</h4>
-                <h3>1234 Storm Avenue</h3>
-                <h3>Boise, Idaho 83707</h3>
-                <h3>1-800-968-8243</h3>
-                <h3>contact@weatherforyou.com</h3>
-            </div>
-            <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
-            </iframe>
-            <a href="https://www.embedgooglemap.net/en/"></a>
-        </div>
+        <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+        <a href="https://www.embedgooglemap.net/en/"></a>
+      </div>
     </main>
     <footer>
         <div>
@@ -145,6 +136,6 @@
             </script>
         </div>
     </footer>
-</body>
+    </body>
 
 </html>
