@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Smbaikaye Huriavi">
+    <meta name="description" content="Preston Town Weather Page">
+    <link rel="icon" href="/simihuriavi.github.io/week5/preston-10/favicon.ico">
+    <link rel="stylesheet" href="/simihuriavi.github.io/week5/preston-10/css/normalize.css">
+    <link rel="stylesheet" href="/simihuriavi.github.io/week5/preston-10/css/small.css">
+    <link rel="stylesheet" href="/simihuriavi.github.io/week5/preston-10/css/medium.css">
+    <link rel="stylesheet" href="/simihuriavi.github.io/week5/preston-10/css/large.css">      
+    <title>Preston Town Weather</title>
+  </head>
+  <body>
+    <div id="announce" style="display: block;"></div>
+    <header>
+      <img src="data:image/png;base64,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" alt="Weather Site Logo">
+      <section class="heading">
+        <h1>Weather For You</h1>
+        <div class="motto">"The weather you can trust!"</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="/simihuriavi.github.io/week5/index/index.html">Home</a></li>
+        <li><a class="active" href="/simihuriavi.github.io/week5/preston-10/preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="/simihuriavi.github.io/stormcenter/stormcenter.html">Storm Center</a></li>
+        <li><a href="/simihuriavi.github.io/prestongallery/prestongallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class= "section_head">Preston</h2>
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 400px)" srcset="/simihuriavi.github.io/week5/preston-10/images/prestonHero_400.jpg">
+          <source media="(max-width: 800px)" srcset="/simihuriavi.github.io/week5/preston-10/images/prestonHero_800.jpg">
+          <img src="/simihuriavi.github.io/week5/preston-10/images/prestonHero_1200.jpg" alt="Preston Farmland">
+        </picture>
+				<section class="summary">
+          <h3>Weather Summary</h3>
+            <p>Currently: 
+              <span id="currently"></span>
+            </p>
+            <p>Temp: 
+              <span id="temp"></span>
+            &#176;F</p>
+            <p>Wind Chill: 
+              <span id="windchill"></span>
+            </p>
+            <p>Humidity: 
+              <span id="humidity"></span>
+            %</p>
+            <p>Wind Speed: 
+              <span id="windspeed"></span>
+            mph</p>
+  			</section>
+      </div>
+      <h3 id="forecastTitle">5 Day Forecast</h3>
+      <div class="forecastdiv">
+        <div class="forecasts">
+          <div id="day1"></div>
+          <img src="#" alt="" id="img1">
+          <div id="temp1"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day2"></div>
+          <img src="#" alt="" id="img2">
+          <div id="temp2"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day3"></div>
+          <img src="#" alt="" id="img3">
+          <div id="temp3"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day4"></div>
+          <img src="#" alt="" id="img4">
+          <div id="temp4"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day5"></div>
+          <img src="#" alt="" id="img5">
+          <div id="temp5"></div>
+        </div>
+			</div>
+      <div class="articlediv">
+        <picture>
+          <source media="(max-width: 400px)" srcset="/simihuriavi.github.io/week5/preston-10/images/lightning_storm_400.jpg">
+          <source media="(max-width: 800px)" srcset="/simihuriavi.github.io/week5/preston-10/images/lightning_storm_800.jpg">
+          <img id="article_img" src="/simihuriavi.github.io/week5/preston-10/images/lightning_storm_1200.jpg" alt="Storm Image">
+        </picture>
+        <h3>Articles</h3>
+        <p>A balst of warm weather is going to hit us this week.
+
+        The National Weather Service has issued alerts calling for smoke from California from all the forest fires.
+          
+        Everywhere is probrobaly going to be hit equally bad. Make sure to stay indoors because the air quality isn't good.</p>
+          
+        <p>East Idaho's lower elevations including the Pocatello, Chubbuck, American Falls, Aberdeen, Fort Hall, Blackfoot, Idaho Falls, Ammon, Rigby, Rexburg, Preston and Malad areas could smokeand bad air quality is expected.
+
+        It's possible that the smoke caused by the fires in California could linger next week in some areas of East Idaho.--<a href="https://www.idahostatejournal.com/news/local/snow-rain-and-high-winds-in-forecast-for-east-idaho/article_8cd89df7-ff5a-55df-a0e7-b6b79eb7ad56.html">Idaho State Journal</a></p>
+      </div>
+      <div class="contactdiv">
+        <a id="map_link" href="https://www.google.com/maps/@42.0997416,-111.9153445,13z">
+          <img id="map" src="/simihuriavi.github.io/week5/preston-10/images/preston_map.jpg" alt="Preston Map">
+        </a>
+        <div class="contact_info">
+          <h4>Contact Information</h4>
+          <h3>1234 Storm Avenue</h3>
+          <h3>Boise, Idaho 83707</h3>
+          <h3>986-222-1234</h3>
+          <h3>contact@weatherforyou.com</h3>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        &copy;<span id="copyright"></span> | Smbaikaye Huriavi | Washington | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </div>
+      <span id="dates"></span>
+    </footer>
+    <script src="/simihuriavi.github.io/week5/preston-10/js/script.js"></script>
+    <script src="/simihuriavi.github.io/week5/preston-10/js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+      WebFont.load({google: {families: ['Fira Sans', 'Titillium Web']}});
+    </script>
+  </body>
+</html>
